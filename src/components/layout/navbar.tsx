@@ -21,8 +21,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <motion.img
-                src="https://cdn.discordapp.com/icons/1240720614151684119/5a3878a824f56a6111a6a41752dc0923.webp?size=512&format=webp"
-                alt="Torrent Logo"
+                src="https://cdn.discordapp.com/icons/1312686770663718932/4e5f58a6631a6b3a10b88619f4cce028.png?size=1024"
                 className="h-10 w-10 rounded-full ring-2 ring-green-500/20"
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
@@ -31,7 +30,7 @@ export function Navbar() {
                 className="text-xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent"
                 whileHover={{ scale: 1.05 }}
               >
-                Torrent
+                Titanic Admin
               </motion.span>
             </Link>
           </div>
@@ -51,7 +50,7 @@ export function Navbar() {
               ))}
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <a
-                  href="https://discord.gg/torrent-1-serverside-1240720614151684119"
+                  href="https://discord.gg/xdNsAC9Xmm"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -99,7 +98,7 @@ export function Navbar() {
                 </Link>
               ))}
               <a
-                href="https://discord.gg/torrent-1-serverside-1240720614151684119"
+                href="https://discord.gg/xdNsAC9Xmm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 block"
