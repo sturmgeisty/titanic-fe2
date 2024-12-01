@@ -37,7 +37,7 @@ export default function Policy() {
                 {...fadeInUp}
                 transition={{ delay: 0.2 }}
               >
-                <h2 className="text-2xl font-semibold text-green-400 mb-6 flex items-center">
+                <h2 className="text-2xl font-semibold text-yellow-400 mb-6 flex items-center">
                   <Shield className="mr-2 h-6 w-6" />
                   Data We Collect
                 </h2>
@@ -56,7 +56,7 @@ export default function Policy() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 + index * 0.1 }}
                     >
-                      <span className="text-green-400 mt-1">•</span>
+                      <span className="text-yellow-400 mt-1">•</span>
                       <span>{item}</span>
                     </motion.li>
                   ))}
@@ -68,7 +68,7 @@ export default function Policy() {
                 {...fadeInUp}
                 transition={{ delay: 0.4 }}
               >
-                <h2 className="text-2xl font-semibold text-green-400 mb-6">Refund Policy</h2>
+                <h2 className="text-2xl font-semibold text-yellow-400 mb-6">Refund Policy</h2>
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-xl font-bold mb-3">No Refunds</h3>
@@ -92,7 +92,7 @@ export default function Policy() {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: 0.5 + index * 0.1 }}
                         >
-                          <span className="text-green-400 mt-1">•</span>
+                          <span className="text-yellow-400 mt-1">•</span>
                           <span>{item}</span>
                         </motion.li>
                       ))}
