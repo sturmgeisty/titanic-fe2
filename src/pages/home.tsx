@@ -22,17 +22,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 text-center"
         >
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-8 flex justify-center"
-          >
-            <img 
-              src="https://media.discordapp.net/attachments/1312697488951480382/1312798709557362779/Test_00000.png?ex=674dce92&is=674c7d12&hm=ba35b85854b39e83ef7194502652f8bc7a44ce01cb0961ec73d9d3498b828e71&=&format=webp&quality=lossless&width=563&height=563"
-              className="w-32 h-32 rounded-full ring-4 ring-yellow-500/30 animate-glow"
-            />
-          </motion.div>
+
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
