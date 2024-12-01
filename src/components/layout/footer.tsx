@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-center space-y-8">
           <motion.img
             src="https://cdn.discordapp.com/icons/1312686770663718932/4e5f58a6631a6b3a10b88619f4cce028.png?size=1024"
-            className="h-16 w-16 rounded-full ring-2 ring-green-500/20"
+            className="h-16 w-16 rounded-full ring-2 ring-yellow-500/20"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           />
@@ -33,7 +33,7 @@ export function Footer() {
             </a>
             
             <div className="flex items-center justify-center space-x-2 text-gray-400">
-              <Shield className="h-5 w-5 text-green-400" />
+              <Shield className="h-5 w-5 text-yellow-400" />
               <p className="text-sm">
                 &copy; {new Date().getFullYear()} Titanic Serverside. All rights reserved.
               </p>
