@@ -27,12 +27,12 @@
 
 @keyframes glow {
   0%, 100% { 
-    box-shadow: 0 0 30px rgba(34, 197, 94, 0.4),
-                0 0 60px rgba(34, 197, 94, 0.2);
+    box-shadow: 0 0 30px rgba(245, 191, 66, 0.4),
+                0 0 60px rgba(245, 191, 66, 0.2);
   }
   50% { 
-    box-shadow: 0 0 50px rgba(34, 197, 94, 0.6),
-                0 0 100px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 0 50px rgba(245, 191, 66, 0.6),
+                0 0 100px rgba(245, 191, 66, 0.3);
   }
 }
 
@@ -68,8 +68,8 @@
 .glass-card {
   @apply bg-black/40 backdrop-blur-xl border border-green-500/10;
   box-shadow: 
-    0 0 30px rgba(34, 197, 94, 0.1),
-    inset 0 0 30px rgba(34, 197, 94, 0.05);
+    0 0 30px rgba(245, 191, 66, 0.1),
+    inset 0 0 30px rgba(245, 191, 66, 0.05);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -77,14 +77,14 @@
   @apply border-green-500/30;
   transform: translateY(-8px);
   box-shadow: 
-    0 20px 40px rgba(34, 197, 94, 0.2),
-    inset 0 0 50px rgba(34, 197, 94, 0.1);
+    0 20px 40px rgba(245, 191, 66, 0.2),
+    inset 0 0 50px rgba(245, 191, 66, 0.1);
 }
 
 .cyber-grid {
   background-image: 
-    linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(245, 191, 66, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 191, 66, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
   background-position: center center;
 }
@@ -106,7 +106,7 @@
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(34, 197, 94, 0.4),
+    rgba(245, 191, 66, 0.4),
     transparent
   );
   transition: 0.5s;
@@ -126,10 +126,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(34, 197, 94, 0.5);
+  background: rgba(245, 191, 66, 0.5);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(34, 197, 94, 0.7);
+  background: rgba(245, 191, 66, 0.7);
 }
