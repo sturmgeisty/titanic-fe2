@@ -29,7 +29,7 @@ export default function Policy() {
                 className="text-lg text-gray-300 leading-relaxed mb-8"
                 {...fadeInUp}
               >
-                Torrent Serverside acknowledges the importance of your data and does its best at ensuring your data is securely stored in our systems. We will never sell or provide your user information or share it in any way, we respect your privacy.
+                Titanic Serverside acknowledges the importance of your data and does its best at ensuring your data is securely stored in our systems. We will never sell or provide your user information or share it in any way, we respect your privacy.
               </motion.p>
 
               <motion.div 
@@ -44,7 +44,7 @@ export default function Policy() {
                 <ul className="space-y-4">
                   {[
                     'HTTP requests body (sent to or through our service)',
-                    'Discord Messages in Torrent Server / Bot Interactions',
+                    'Discord Messages in Titanic Server / Bot Interactions',
                     'Roblox Account (used for linking for HTTP whitelist)',
                     'Scripts ran by your linked ROBLOX account',
                     'Chat logs of infected game servers (including those who aren\'t whitelisted)'
