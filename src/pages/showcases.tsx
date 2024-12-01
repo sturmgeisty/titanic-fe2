@@ -123,7 +123,7 @@ export default function Showcases() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                     <div className="absolute bottom-3 right-3 bg-black/85 px-2 py-1 rounded-full flex items-center space-x-2">
-                      <Clock className="h-4 w-4 text-green-400" />
+                      <Clock className="h-4 w-4 text-yellow-400" />
                       <span className="text-sm">{showcase.duration}</span>
                     </div>
                     <motion.div
@@ -138,10 +138,10 @@ export default function Showcases() {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center space-x-2 mb-3">
-                      <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">
+                      <span className="px-3 py-1 rounded-full text-xs font-medium bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
                         {showcase.creator}
                       </span>
-                      <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">
+                      <span className="px-3 py-1 rounded-full text-xs font-medium bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
                         {showcase.type}
                       </span>
                     </div>
@@ -150,11 +150,11 @@ export default function Showcases() {
                     </h3>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4">
-                        <span className="flex items-center text-green-400">
+                        <span className="flex items-center text-yellow-400">
                           <Eye className="h-4 w-4 mr-1" />
                           {showcase.views}
                         </span>
-                        <span className="flex items-center text-green-400">
+                        <span className="flex items-center text-yellow-400">
                           <Star className="h-4 w-4 mr-1" />
                           {showcase.badge}
                         </span>
@@ -200,7 +200,7 @@ export default function Showcases() {
             <p className="text-gray-300 mb-6">{selectedShowcase.description}</p>
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
-                <span className="text-green-400">{selectedShowcase.creator}</span>
+                <span className="text-yellow-400">{selectedShowcase.creator}</span>
                 <span className="text-gray-400">{selectedShowcase.date}</span>
               </div>
               <Button onClick={closeModal}>Close</Button>
