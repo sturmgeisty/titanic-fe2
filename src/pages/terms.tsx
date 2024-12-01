@@ -53,8 +53,8 @@ export default function Terms() {
                     transition={{ delay: index * 0.2 }}
                   >
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="p-3 rounded-lg bg-green-500/10">
-                        <term.icon className="h-6 w-6 text-green-400" />
+                      <div className="p-3 rounded-lg bg-yellow-500/10">
+                        <term.icon className="h-6 w-6 text-yellow-400" />
                       </div>
                       <h3 className="text-xl font-semibold gradient-text">{term.title}</h3>
                     </div>
@@ -64,7 +64,7 @@ export default function Terms() {
               </div>
 
               <motion.div 
-                className="mt-12 p-6 rounded-xl bg-green-500/5 border border-green-500/10"
+                className="mt-12 p-6 rounded-xl bg-yellow-500/5 border border-yellow-500/10"
                 {...fadeInUp}
                 transition={{ delay: 0.6 }}
               >
