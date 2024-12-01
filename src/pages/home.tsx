@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Shield, Zap, Lock, MessageSquare } from 'lucide-react'
+import { Shield, Zap, Lock, MessageSquare, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default function Home() {
@@ -29,8 +29,7 @@ export default function Home() {
             className="mb-8 flex justify-center"
           >
             <img 
-              src="https://cdn.discordapp.com/icons/1240720614151684119/5a3878a824f56a6111a6a41752dc0923.webp?size=512&format=webp"
-              alt="Torrent Logo"
+              src="https://media.discordapp.net/attachments/1312697488951480382/1312798709557362779/Test_00000.png?ex=674dce92&is=674c7d12&hm=ba35b85854b39e83ef7194502652f8bc7a44ce01cb0961ec73d9d3498b828e71&=&format=webp&quality=lossless&width=563&height=563"
               className="w-32 h-32 rounded-full ring-4 ring-green-500/30 animate-glow"
             />
           </motion.div>
@@ -41,7 +40,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-6xl md:text-7xl font-bold mb-6 gradient-text"
           >
-            Torrent Serverside
+            Titanic Serverside
           </motion.h1>
 
           <motion.p
@@ -61,7 +60,7 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-6 justify-center"
           >
             <a 
-              href="https://discord.gg/torrent-1-serverside-1240720614151684119"
+              href="https://discord.gg/xdNsAC9Xmm"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -92,9 +91,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Shield, title: 'Secure', desc: 'Advanced security measures' },
-              { icon: Lock, title: 'Private', desc: 'Your data stays protected' },
-              { icon: Zap, title: 'Fast', desc: 'Lightning-fast performance' }
+              { icon: Shield, title: 'Secure', desc: 'Advanced security measures.' },
+              { icon: Lock, title: 'Private', desc: 'Your data stays protected.' },
+              { icon: Zap, title: 'Fast', desc: 'Lightning-fast performance.' }
             ].map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -127,31 +126,23 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: 'STANDARD ACCESS',
-                price: '€15',
-                features: ['Full Standard Access', 'Immediate Support', 'Games up to 500 players'],
-                link: 'https://torrent.sellpass.io/products/TORRENT-STANDARD-KEY'
+                title: 'BASIC ACCESS',
+                price: '€10',
+                features: ['Full Basic Access', 'Immediate Support', 'Games up to 100 players'],
+                link: 'https://titanic.bgng.io/product/basic-access'
               },
               {
-                title: 'PREMIUM ACCESS',
-                price: '€25',
-                features: ['Full Premium Access', 'Priority Support', 'No limit on player count', 'Exclusive Updates'],
-                link: 'https://torrent.sellpass.io/products/TORRENT-PREMIUM-KEY',
+                title: 'PLUS ACCESS',
+                price: '€15',
+                features: ['Full Plus Access', 'Priority Support', 'Games up to 250 players', 'Exclusive Updates'],
+                link: 'https://titanic.bgng.io/product/plus-access',
                 highlight: true
               },
               {
-                title: 'STANDARD UPGRADE',
-                price: '€10',
-                subtitle: '(Standard only)',
-                features: ['Full Premium Access', 'Priority Support', 'No limit on player count', 'Exclusive Updates'],
-                link: 'https://torrent.sellpass.io/products/STANDARD--PREMIUM-UPGRADE'
-              },
-              {
-                title: 'UNBLACKLIST',
-                price: '€10',
-                subtitle: '(Blacklist only)',
-                features: ['Unblacklist Access', 'Immediate Support', 'Basic Features'],
-                link: 'https://torrent.sellpass.io/products/TORRENT-UNBLACKLIST'
+                title: 'ULTRA ACCESS',
+                price: '€25',
+                features: ['Full Ultra Access', 'Priority Support', 'No limit on player count', 'Exclusive Updates'],
+                link: 'https://titanic.bgng.io/product/ultra-access'
               }
             ].map((plan, index) => (
               <motion.div
@@ -167,7 +158,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-4 gradient-text">{plan.title}</h3>
                 <div className="mb-6">
                   <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-gray-400 ml-2">Lifetime</span>
+                  <span className="text-gray-400 ml-2">Monthly License</span>
                   {plan.subtitle && (
                     <p className="text-sm text-gray-400 mt-1">{plan.subtitle}</p>
                   )}
@@ -175,7 +166,7 @@ export default function Home() {
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-center text-gray-300">
-                      <Shield className="h-5 w-5 text-green-400 mr-2" />
+                      <Check className="h-5 w-5 text-green-400 mr-2" />
                       {feature}
                     </li>
                   ))}
