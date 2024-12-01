@@ -14,17 +14,17 @@ export default function Terms() {
     {
       title: 'External Servers',
       icon: Shield,
-      content: 'No external serversides / code executors (gets blocked by AI ss detector)'
+      content: 'No external serversides / code executors (gets blocked by AI ss detector).'
     },
     {
       title: 'Game Security',
       icon: Lock,
-      content: 'No snitching of infected games'
+      content: 'No snitching of infected games.'
     },
     {
       title: 'Communication Policy',
       icon: AlertTriangle,
-      content: 'Don\'t communicate about Torrent (automatic blacklist thanks to AI moderation systems)'
+      content: 'Don\'t communicate about Torrent (automatic blacklist thanks to AI moderation systems).'
     }
   ]
 
