@@ -27,7 +27,7 @@ export function Navbar() {
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               />
               <motion.span
-                className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-emerald-500 bg-clip-text text-transparent"
+                className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent"
                 whileHover={{ scale: 1.05 }}
               >
                 Titanic Admin
