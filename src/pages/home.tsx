@@ -8,9 +8,9 @@ export default function Home() {
       {/* Animated background*/}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(34,197,94,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245, 191, 66,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245, 191, 66,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(245, 191, 66,0.1),transparent_50%)]" />
         <div className="absolute inset-0 cyber-grid opacity-20" />
       </div>
 
@@ -30,7 +30,7 @@ export default function Home() {
           >
             <img 
               src="https://media.discordapp.net/attachments/1312697488951480382/1312798709557362779/Test_00000.png?ex=674dce92&is=674c7d12&hm=ba35b85854b39e83ef7194502652f8bc7a44ce01cb0961ec73d9d3498b828e71&=&format=webp&quality=lossless&width=563&height=563"
-              className="w-32 h-32 rounded-full ring-4 ring-green-500/30 animate-glow"
+              className="w-32 h-32 rounded-full ring-4 ring-yellow-500/30 animate-glow"
             />
           </motion.div>
 
@@ -102,7 +102,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="glass-card p-8 rounded-xl hover:translate-y-[-8px] transition-all duration-300"
               >
-                <feature.icon className="h-12 w-12 text-green-400 mb-6" />
+                <feature.icon className="h-12 w-12 text-yellow-400 mb-6" />
                 <h3 className="text-xl font-bold mb-4 gradient-text">{feature.title}</h3>
                 <p className="text-gray-400">{feature.desc}</p>
               </motion.div>
@@ -150,10 +150,10 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`glass-card rounded-xl p-8 ${plan.highlight ? 'border-green-500 shadow-green-500/20 shadow-lg' : ''}`}
+                className={`glass-card rounded-xl p-8 ${plan.highlight ? 'border-yellow-500 shadow-yellow-500/20 shadow-lg' : ''}`}
               >
                 {plan.highlight && (
-                  <div className="text-green-400 text-sm font-medium mb-2">★ Most Popular</div>
+                  <div className="text-yellow-400 text-sm font-medium mb-2">★ Most Popular</div>
                 )}
                 <h3 className="text-xl font-bold mb-4 gradient-text">{plan.title}</h3>
                 <div className="mb-6">
@@ -163,7 +163,7 @@ export default function Home() {
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-center text-gray-300">
-                      <Check className="h-5 w-5 text-green-400 mr-2" />
+                      <Check className="h-5 w-5 text-yellow-400 mr-2" />
                       {feature}
                     </li>
                   ))}
